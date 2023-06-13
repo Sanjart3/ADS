@@ -57,13 +57,4 @@ public class ParallelMergeSort {
         MergeSortTask mergeSortTask = new MergeSortTask(array, 0, array.length - 1);
         forkJoinPool.invoke(mergeSortTask);
     }
-
-    public static void main(String[] args) {
-        int[] array = {9, 2, 7, 4, 5, 1, 8, 3, 6};
-        System.out.println("Original array: " + Arrays.toString(array));
-
-        parallelMergeSort(array);
-
-        System.out.println("Sorted array: " + Arrays.toString(array));
-    }
 }
