@@ -52,13 +52,4 @@ public class ParallelQuicksort {
             array[j] = temp;
         }
     }
-
-    public static void main(String[] args) {
-        int[] array = {7, 2, 1, 6, 8, 5, 3, 4};
-        System.out.println("Original array: " + Arrays.toString(array));
-
-        parallelQuicksort(array);
-
-        System.out.println("Sorted array: " + Arrays.toString(array));
-    }
 }
